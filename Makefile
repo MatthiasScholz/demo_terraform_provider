@@ -12,6 +12,14 @@ scaffold: scaffold-provider
 init:
 	go mod init $(provider_name)
 
+deps:
+	go mod tidy
+
+binary := build/$(provider_name)
+build: deps
+	@echo "INFO :: Build destination: $(binary)"
+	go build -o $(binary)
+
 # -- Generator specifics
 
 prerequisites-basics-check:

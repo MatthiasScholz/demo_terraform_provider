@@ -1,8 +1,10 @@
 # Demo: Terraform Provider Generation
 
-Using the Hashicorp Terraform Provider Generator.
+Using the HashiCorp Terraform Provider Generator.
 
 ## Usage
+
+### Scaffolding
 
 ``` sh
 # Setup the repository and the tooling
@@ -13,6 +15,13 @@ make scaffold
 
 # Start coding
 edit main.go
+```
+
+### Develop
+
+``` sh
+# Build Terraform Provider
+make build
 ```
 
 ## References
